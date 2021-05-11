@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>UPN</title>
+		<link rel="stylesheet" type="text/css" href="stile.css">
+	<head>
+	<body>
+		<form>
+			<div id="okvir">	
+				<div id="levi" style="border-right: 1px solid black;">	
+					<b><span style="position:absolute;top:1.5mm;left:4mm;">UPN</span><b>
+					<span class="text"style="position:absolute;top:7.4mm;left:4mm;">ime plačnika</span>
+					<input class="obroba"type="text" style="width: 53mm; height: 9mm; margin: 4mm;position:absolute; top:6mm;">
+					<span class="text"style="position:absolute;top:20mm;left:4mm;">Namen / rok plačila</span>
+					<input class="obroba"type="text" style="width: 53mm; height: 9mm; margin: 4mm;position:absolute; top:18.5mm;">
+					<span class="text"style="position:absolute;top:32.5mm;left:16.9mm;">znesek</span>
+					<b><span  style="position:absolute;top:30.5mm;margin: 5mm;">EUR</span></b>
+					<input class="obroba"type="text" style="width: 40mm; height: 5mm; margin: 16.9mm;position:absolute; top:18.4mm;">
+					<span class="text"style="position:absolute;top:40.5mm;left:4mm;">IBAN prejemnika in BIC banke prejemnika</span>
+					<input class="obroba"type="text" style="width: 53mm; height: 13.5mm; margin: 4mm;position:absolute; top:39.3mm;">
+					<span class="text"style="position:absolute;top:57.5mm;left:4mm;">Referenca prejemnika</span>
+					<input class="obroba"type="text" style="width: 53mm; height: 5mm; margin: 4mm;position:absolute; top:56mm;">
+					<span class="text"style="position:absolute;top:65.4mm;left:4mm;">ime prejemnika</span>
+					<input class="obroba"type="text" style="width: 53mm; height: 9mm; margin: 4mm;position:absolute; top:64mm;">
+					<span class="text2"style="position:absolute;bottom:0.4mm;left:4mm;">poterditev plačila UPN</span>
+				</div>
+				<div id="desniZg">
+					<div class="crta"style="width: 2mm; margin: 0 0 0 1mm;position: absolute;top:1.5mm;">
+					</div>
+					
+					<span class="text" style="position: absolute; top: 0.5mm; left:3.5mm;">IBAN</span>
+					<div class="crta" style="width: 70mm;left: 10mm;position: absolute;top:1.5mm;">
+					</div>
+					<span class="text" style="position: absolute; top: 0.4mm;left:82mm;">Polog</span>
+					<div class="crta"style="width: 4mm;left: 89mm;position: absolute;top:1.5mm;">
+					</div>
+					<span class="text" style="position: absolute; top: 0.4mm; left:95mm;">Dvig</span>
+					<div class="obroba"id="podpis" >
+						<canvas id="podpis-canvas"class="canvas"></canvas>
+					</div>
+					<input class="ozadje" type="text" style="height: 5mm; width:75.25mm;position:absolute; left:3.75mm;top:3.5mm;">
+
+					<input class="input" type="radio" name="dvig/polog"value="polog" style="position:absolute; top: 4mm;left: 95.5mm">
+					<input class="input" type="radio" name="dvig/polog"value="dvig" style="position:absolute; top: 4mm; left: 83mm;">
+					<span class="obrat" class="text"style="left:-2.5mm;top:-2mm">PLAČNIK</span>
+					<span class="DsZgText"style="position:absolute; top:9mm; left: 3,75mm">Referenca</span>
+					<input class="ozadje" type="text"style="position:absolute; top:12mm; left:3.75mm;width:15mm;height:5mm;">
+					<input class="ozadje" type="text" style="position:absolute; top:12mm; left: 20.75mm;height:5mm;width:82.5mm">
+					<span class="DsZgText" style="position:absolute; top:17mm;left:-1">ime in naslov</span>
+					<input class="obroba" type="text" style="position:absolute; top:20mm; left: 3.75mm;height:9mm;width:99.9mm">
+					<span class="text" style="position:absolute; left:3.75mm; top: 29.5mm">Koda namena</span><span class="text" style="position:absolute; left:22.5mm; top: 29.5mm">Namen / rok plačila</span>
+					<input class="ozadje"  type="text" style="position:absolute; top:32.5mm; left: 3.75mm;width:15mm;height:5mm;">
+					<input class="ozadje"  type="text" style="position:absolute; top:32.5mm; left: 22.5mm;width:112.5mm;height:5mm;">
+					<span class="text" style="position: absolute; top: 30.5mm;left:137.5mm;">Nujno</span>
+					<input class="input" type="checkbox" style="position: absolute; left: 138.5mm;top: 33.5mm;">
+					<span></span>
+				</div>
+				<div id="desniSp">
+					<span class="obrat"style="position: absolute; left:-4mm; top:2.5mm;">PREJEMNIK</span>
+					<div class="crta" style="position: absolute; top:1.5mm;left:1.5mm;width: 13mm"></div>
+					<span class="text" style="position: absolute; top:0.5mm;left:15mm;">Znesek</span>
+					<div class="crta" style="position: absolute; top:1.5mm;left:23.5mm;width: 35mm"></div>
+					<span class="text" style="position: absolute; top:0.5mm;left:60mm">Datum in plačila</span>
+					<div class="crta" style="position: absolute; top:1.5mm;left:79mm;width: 13mm"></div>
+					<span class="text" style="position: absolute; top:0.5mm;left:93.75mm;">BIC banka prejemnika</span>
+					<div class="crta" style="position: absolute; top:1.5mm;left:1.5mm;width: 13mm"></div>
+					<div class="crta" style="position: absolute; top:1.5mm;left:1.5mm;width: 13mm"></div>
+					<b><span  style="position: absolute;left: 4mm;top:3.5mm">EUR</span><b>
+					<input class="ozadje"type="text"style="position: absolute;left:15mm;top:3mm;width:41.25mm;height:5mm;">
+					<input class="ozadje"type="text"style="position: absolute; left:60mm; top:3mm;height:5mm;width:30mm;">
+					<input class="ozadje"type="text"style="position:absolute; left:93.75mm;top:3mm; height:5mm;width:41.25mm;">
+					<span class="text"style="position:absolute; left:3.75mm;top:9mm;">IBAN</span>
+					<input class="ozadje"type="text"style="position:absolute;left:3.75mm;top:11.5mm;width:127.5mm;height:5mm;">
+					<span class="text"style="position:absolute; left:137.5mm;top:9mm;">Izjava</span>
+					<input class="input" type="checkbox" style="position:absolute; left:138.5mm; top:12mm;">
+					<span class="text" style="position: absolute; left:3.75mm;top:17mm;">Referenca</span>
+					<input class="ozadje" type="text" style="position:absolute; left: 3.75mm; top:20mm;width:15mm; height:5mm;">
+					<input class="ozadje" type="text" style="position:absolute; left:20.75mm; top:20mm;width:82.5mm; height:5mm;">
+					<b><span style="position: absolute; top:20.5mm; left:105mm;">UPN</span></b>
+					<span style="position: absolute;left:115mm;top:21.5mm;font-size:7pt">-univerzalni plačilni nalog</span>
+					<span class="text" style="position: absolute;left:3.75mm;top:25.5mm;">ime in priimek</span>
+					<input class="obroba" type="text" style="position: absolute; left:3.75mm;top: 28.5mm;width:131.25mm; height:9mm;">
+					<span class="text2"style="position: absolute;top:40mm; left:50mm">Prostor za vpise ponudnika plačilnih storitev</span>
+					
+				</div>
+				<div id="spodnji">
+					<span class="text2" style="position:absolute; left:62.5mm;bottom:0.3mm">Prosimo, ne pišite in žigosajte v tem prostoru.</span>
+					<span class="text2" style="position:absolute; left:170mm;bottom:0.3mm">Obrazec UPN – Univerzalni plačilni nalog</span>
+				</div>
+			</div>
+		</form>
+		<script>
+			var canvas = document.getElementById("podpis-canvas");
+			var context = canvas.getContext("2d");
+			
+			canvas.width = 162;
+			canvas.height = 75;
+
+			var points = [];
+			var last = 0;
+			var color = "#000000";
+			var size = 2;
+
+			canvas.onmousemove = function(e) {
+			  if (e.buttons == 1) {
+				var offsets = canvas.getBoundingClientRect();
+				var zgoraj = offsets.top;
+				var levo = offsets.left;
+				addClick(e.pageX - levo, e.pageY - zgoraj, true);
+				redraw();
+			  }
+			}
+
+			canvas.onmousedown = function(e) {
+				var offsets = canvas.getBoundingClientRect();
+				var zgoraj = offsets.top;
+				var levo = offsets.left;
+			  addClick(e.pageX - levo, e.pageY - zgoraj, false);
+			  redraw();
+			}
+
+			function addClick(x, y, dragging) {
+			  points.push({x: x, y: y, dragging: dragging });
+			}
+
+			context.lineJoin = "round";
+
+			function redraw() {
+			  context.strokeStyle = color;
+			  context.lineWidth = size;
+			  for (var i = last; i < points.length; i++) {
+				context.beginPath();
+				if (points[i].dragging && i)
+				  context.moveTo(points[i - 1].x, points[i - 1].y);
+				else
+				  context.moveTo(points[i].x, points[i].y);
+				context.lineTo(points[i].x, points[i].y);
+				
+				context.closePath();
+				context.stroke();
+			  }
+			  
+			  last = points.length;
+			}
+		</script>
+	</body>
+</html>

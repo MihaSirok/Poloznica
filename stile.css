@@ -1,0 +1,138 @@
+*{
+	padding: 0px;
+	margin: 0px;
+
+}
+body{
+	background-color:white;
+}
+@font-face {
+  font-family: Nimbus;
+  src: url(NimbusSanDEE.ttf);
+
+}
+#okvir{
+	margin: 0px auto;
+	width: 210mm;
+	height: 102.6mm;
+	background: ;	
+	border: solid black 1px;
+	position: relative;
+	font-family:Nimbus;
+}
+#levi{
+	width: 60mm;
+	height: 102.6mm;
+	
+	
+}
+#desniZg{
+	width: 150mm;
+	height: 39mm;
+	background: rgba(255, 103, 77, 0.2);
+	position: absolute;
+	top: 0px;
+	left: 60mm;
+	
+	
+}
+
+#desniSp{
+	width: 150mm;
+	height: 45.55mm;
+	background: rgba(255, 181, 17, 0.2);
+	position: absolute;
+	top: 39mm;
+	left: 60mm;
+}
+
+#spodnji{
+	height: 17.05mm;
+	width: 150mm,
+	
+}
+.obroba{
+	border: solid rgba(255, 103, 77, 1) 1px;
+}
+
+.text{
+	line-height: 3.6mm;
+	font-family: Nimbus;
+	float: left;
+	font-size: 7pt;
+	font-style:bold;
+	color: rgb(255, 103, 77);
+	padding: 0px;
+	height:3.7mm;
+}
+#podpis{
+	height:29mm;
+	width: 43.5mm;
+	background:white;
+	position: absolute;
+	top: 1mm;
+	right: 1mm;
+	
+}
+
+ .EUR{
+	 font-family:NimbusSan Dee;
+	 font-size: 11pt;
+ }
+.input{
+  width: 4mm;
+  height: 4mm;
+  border: solid rgba(255, 103, 77, 1) 1px;
+}
+.obrat{
+	line-height: 3.6mm;
+	font-family: Nimbus;
+	float: left;
+	font-size: 7pt;
+	font-style:bold;
+	color: rgb(255, 103, 77);
+	padding: 0px;
+	height:3.7mm;
+	margin-top: 20mm;
+	transform: rotate(-90deg);
+	position: absolute;
+	left: -181mm;
+}
+.crta{
+	height: 0.7mm;
+	background-color:rgb(255, 103, 77)
+}
+
+.DsZgText{
+		line-height: 3.6mm;
+	font-family: Nimbus;
+	float: left;
+	font-size: 7pt;
+	font-style:bold;
+	color: rgb(255, 103, 77);
+	padding: 0px;
+	height:3.7mm;
+	margin-left:3.75mm;
+}
+.majhnoOkno{
+	width: 15mm; 
+	height:5mm;
+}
+.text2{
+	line-height: 3.6mm;
+	font-family: Nimbus;
+	float: left;
+	font-size: 6pt;
+	font-style:bold;
+	color: rgb(255, 103, 77);
+	padding: 0px;
+	height:3.7mm;
+}
+.ozadje{
+	background-image: url("ozadje.png");
+	border: solid rgba(255, 103, 77, 1) 1px;
+}
+.canvas{
+	height:28mm;
+	width: 42.5mm;
+}
